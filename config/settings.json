@@ -1,0 +1,69 @@
+{
+  "mcpServers": {
+    "ddg-search": {
+      "command": "npx",
+      "args": ["-y", "@oevortex/ddg_search@latest"]
+    },
+    "open-meteo": {
+      "command": "npx",
+      "args": ["-y", "-p", "open-meteo-mcp-server", "open-meteo-mcp-server"]
+    }
+  },
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 C:/Users/18089/.claude/hooks/jarvis_hook.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 C:/Users/18089/.claude/hooks/jarvis_hook.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 C:/Users/18089/.claude/hooks/jarvis_hook.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 C:/Users/18089/.claude/hooks/jarvis_hook.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "py -3 C:/Users/18089/.claude/hooks/jarvis_hook.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}
